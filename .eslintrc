@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    }
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "globals": {
+    "window": true
+  },
+  "plugins": ["prettier"],
+  "extends": [
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    // 根据自身需求覆盖推荐的配置
+    "no-var": "error"
+  }
+}
